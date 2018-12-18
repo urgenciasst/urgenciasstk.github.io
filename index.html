@@ -1,56 +1,111 @@
 <!DOCTYPE html>
+<!--  -->
 <html>
 <head>
 	<title>Urgencias Mobile</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+
+	<meta name="author" content="REC2 STK">	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
+
+	<link rel="stylesheet" href="css/materialize.min.css">
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<script type = "text/javascript" src = "js/jquery-2.1.1.min.js"></script>           
+  	<script src="js/materialize.min.js"></script>    
 </head>
 <body>
-	<nav class="blue darken-3">
-	    <div class="container">
-		    <div class="nav-wrapper">
-		      	<a href="" class="brand-logo ">Mobile - IPA</a>
-		      	<ul id="nav-mobile" class="right hide-on-med-and-down ">
-		        <li><a href="http://testextranet.osde.ar/OSDEExtranet/jsp/multiempresas/osde/HomePublicaV2.jsp" target=”_blank”>EXTRANET - Test</a></li>
-		     	</ul>
-		    </div>
-	    </div>
-  	</nav>
+	<nav class="nav-extended blue darken-3">
+		<div class="container">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Mobile</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="https://docs.google.com/spreadsheets/d/1-JCyYsu0LVygPLQFjYCzBMsgtoe3htz3VMvEsitHZmI" target="_blank">Prestadores</a></li>
+					<li><a href="http://testextranet.osde.ar/OSDEExtranet/jsp/multiempresas/osde/HomePublicaV2.jsp" target="_blank">Extranet</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="https://docs.google.com/spreadsheets/d/1-JCyYsu0LVygPLQFjYCzBMsgtoe3htz3VMvEsitHZmI" target="_blank">Prestadores</a></li>
+					<li><a href="http://testextranet.osde.ar/OSDEExtranet/jsp/multiempresas/osde/HomePublicaV2.jsp" target="_blank">Extranet</a></li>
+				</ul>
+			</div>
+			<div class="nav-content">
+				<ul class="tabs tabs-transparent">
+					<li class="tab"><a class="active" href="#ipa">IPA</a></li>
+					<li class="tab"><a href="#apk">APK</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<div class="container">
-		<table>
-	        <thead>
-	          <tr>
-				  <th>Versión</th>
-				  <th>Desarrollo</th>
-				  <th>Testing</th>
-	          </tr>
-	        </thead>
-			<tbody>
-	          <tr>
-	            <td>12.0.2</td>
-	            <td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.2/desa/manifest.plist">Descargar</a></td>
-	            <td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.2/test/manifest.plist">Descargar</a></td>
-	          </tr>
-	          <tr>
-	            <td>APK 12.0.2</td>
-	            <td><a href="https://urgenciasstk.github.io/mobile/apk/12.0.2/desa/osdeUrgenciasMobile.apk">Descargar</a></td>
-	            <td><a href="https://urgenciasstk.github.io/mobile/apk/12.0.2/test/osdeUrgenciasMobile.apk">Descargar</a></td>
-	          </tr>
-	          <tr>
-	            <td>12.0.3</td>
-	            <td>Agregar</td>
-	            <td>Agregar</td>
-	          </tr>
-	          <!-- <tr>
-	            <td>12.0.4</td>
-	            <td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.4/desa/manifest.plist">Descargar</a></td>
-	            <td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.4/test/manifest.plist">Descargar</a></td>
-	          </tr> -->
-	        </tbody>
-	    </table>
-	</div>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+		<!-- Instalables para iOS - IPA -->
+		<div id="ipa" class="col s12">			
+			<table>
+				<thead>
+					<tr>
+					<th>Versión</th>
+					<th>Desarrollo</th>
+					<th>Testing</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>12.0.1</td>
+					<td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.1/desa/manifest.plist">Descargar</a></td>
+					<td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.1/test/manifest.plist">Descargar</a></td>
+					</tr>
+					<tr>
+					<td>12.0.2</td>
+					<td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.2/desa/manifest.plist">Descargar</a></td>
+					<td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.2/test/manifest.plist">Descargar</a></td>
+					</tr>
+					<tr>
+					<td>12.0.3</td>
+					<td>No disponible</td>
+					<td>No disponible</td>
+					</tr>
+					<tr>
+					<td>12.0.4</td>
+					<td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.4/desa/manifest.plist">Descargar</a></td>
+					<td><a href="itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.4/test/manifest.plist">Descargar</a></td>
+					</tr>
+					<tr>
+					<td>12.0.5</td>
+					<td>No disponible</td>
+					<td>No disponible</td>
+					</tr>
+				</tbody>
+			</table>			
+		</div>
+		<!-- FIN Instalables para iOS - IPA -->
+		<!-- Instalables para Android - APK -->
+		<div id="apk" class="col s12">
+			<table>
+				<thead>
+					<tr>
+					<th>Versión</th>
+					<th>Desarrollo</th>
+					<th>Testing</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>12.0.1</td>
+					<td>No aplica</td>
+					<td>No aplica</td>
+					</tr>
+					<tr>
+					<td>12.0.2</td>
+					<td><a href="https://urgenciasstk.github.io/mobile/apk/12.0.2/desa/osdeUrgenciasMobile.apk">Descargar</a></td>
+					<td><a href="https://urgenciasstk.github.io/mobile/apk/12.0.2/test/osdeUrgenciasMobile.apk">Descargar</a></td>
+					</tr>
+					<tr>
+					<td>12.0.3</td>
+					<td>No disponible</td>
+					<td>No disponible</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- Instalables para Android - APK -->
+	</div>	
 </body>
 </html>
