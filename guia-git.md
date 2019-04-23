@@ -1,5 +1,4 @@
 ---
-title: Guia Git
 ---
 
 # ⚡️Instalación
@@ -9,8 +8,9 @@ Descargar e instalar el software.
 Una vez hecho ya podes empezar a usar git.
 # 📂Crear un repositorio nuevo
 Crea un directorio nuevo, abrilo y ejecutá:
-
-    git init
+```bash
+git init
+```
 para inicializar un nuevo repositorio.
 Una vez hecho, se creará una carpeta **“oculta”** llamada `.git`
 
