@@ -8,9 +8,10 @@ Descargar e instalar el software.
 Una vez hecho ya podes empezar a usar git.
 # 📂Crear un repositorio nuevo
 Crea un directorio nuevo, abrilo y ejecutá:
-```bash
-git init
-```
+    ```yml
+    theme: jekyll-theme-hacker
+    ```
+
 para inicializar un nuevo repositorio.
 Una vez hecho, se creará una carpeta **“oculta”** llamada `.git`
 
