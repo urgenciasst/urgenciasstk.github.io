@@ -1,0 +1,9 @@
+---
+---
+
+@import "jekyll-theme-primer";
+
+.highlight pre,
+  pre {
+    background-color: #ecebeb;
+  }
