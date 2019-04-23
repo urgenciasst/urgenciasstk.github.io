@@ -2,16 +2,16 @@
 ---
 
 # ⚡️Instalación
-Para comenzar a utilizar la consola batch y los comandos de git se debe instalar, para ello ingresar a:
-[https://gitforwindows.org/](https://gitforwindows.org/)
-Descargar e instalar el software.
+Para comenzar a utilizar la consola batch y los comandos de git se debe instalar **git**:  
+Ingresa a: [https://gitforwindows.org/](https://gitforwindows.org/)  
+Descargar e instalar el software.  
 Una vez hecho ya podes empezar a usar git.
 # 📂Crear un repositorio nuevo
 Crea un directorio nuevo, abrilo y ejecutá:
 ```bash
 git init
 ```
-para inicializar un nuevo repositorio.
+para inicializar un nuevo repositorio.  
 Una vez hecho, se creará una carpeta **“oculta”** llamada `.git`
 
 # 📥Hacer checkout a un repositorio (Clonar)
@@ -33,18 +33,18 @@ git clone https://github.com/urgenciasstk/urgenciasstk.github.io.git
 ```
 # 〰️Flujo de trabajo
 ### Los repositorios locales estan compuestos por tres "árboles" administrados por git.
- - Directorio de trabajo
+ - ##### Directorio de trabajo  
  Contiene los archivos del proyecto.
- - Index
+ - ##### Index  
  Actua como una zona intermedia
- - Head
- Apunta al último commit realizado.
- Esto es lo que Git utiliza cuando se hace un "add" y un "commit".
-En el siguiente gráfico se puede comprender mejor:
+ - ##### Head  
+ Apunta al último commit realizado.  
+ Esto es lo que Git utiliza cuando se hace un "add" y un "commit".  
+En el siguiente gráfico se puede comprender mejor:  
 ![Commit process](https://i.imgur.com/BPqmK3W.png)
 # ✔️Add & Commit
 ### Registrar cambios (añadirlos al Index)
-Este es el primer paso en el flujo de trabajo básico.
+Este es el primer paso en el flujo de trabajo básico.  
 ##### Para agregar un archivo especifico
 ```bash
 git add <filename>
@@ -53,16 +53,17 @@ git add <filename>
 ```bash
 git add .
 ```
-Ahora el archivo esta incluído en el **INDEX**.
+Ahora el archivo esta incluído en el **INDEX**.  
 ### Hacer commit de los cambios (añadirlo al Head)
 ##### Para hacer un commit con un mensaje
 ```bash
 git commit -m "URG GDS-999999 STK REC2 - Descripción de cambios"
 ```
-Ahora el archivo esta incluído en el **HEAD**, pero aún no en el repositorio remoto.
+Ahora el archivo esta incluído en el **HEAD**, pero aún no en el repositorio remoto.  
 
 # 🚀Envío de cambios
-Luego de realizar los dos pasos del flujo básico (Add & Commit), los cambios están ahora en el **HEAD** de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecuta:
+Luego de realizar los dos pasos del flujo básico (Add & Commit), los cambios están ahora en el **HEAD** de tu copia local.  
+Para enviar estos cambios a tu repositorio remoto ejecuta:  
 ```bash
 git push origin master
 ```
@@ -95,47 +96,47 @@ Para actualizar tu repositorio local al commit más nuevo *(Update de svn)*, eje
 ```bash
 git pull
 ```
-en tu directorio de trabajo para bajar y fusionar los cambios remotos.
+en tu directorio de trabajo para bajar y fusionar los cambios remotos.  
 `git pull` se encarga de hacer `git fetch`*(descarga de cambios)* seguido de `git merge`*(fusión de cambios)*.
 ### Fusionar cambios (Merge)
-Para fusionar otra rama a tu rama activa (por ejemplo master), utilizá:
+Para fusionar otra rama a tu rama activa (por ejemplo master), utilizá:  
 ```bash
 git merge <branch>
 ```
 en ambos casos git intentará fusionar automáticamente los cambios. 
 ### Conflictos
-Como es de esperarse, no siempre se podran fusionar los cambios automaticamente, y se produciran conflitos.
-Nosotros somos responsable de solucionar esos conflictos manualmente. Para ello se deberán editar los archivos marcados por git.
-Después de modificarlos, debemos marcarlos como **"fusionados"**, para ello ejecuta:
+Como es de esperarse, no siempre se podran fusionar los cambios automaticamente, y se produciran conflitos.  
+Nosotros somos responsable de solucionar esos conflictos manualmente. Para ello se deberán editar los archivos marcados por git.  
+Después de modificarlos, debemos marcarlos como **"fusionados"**, para ello ejecuta:  
 ```bash
 git add <filename>
 ```
-Antes de fusionar los cambios, podes revisarlos usando:
+Antes de fusionar los cambios, podes revisarlos usando:  
 ```bash
 git diff <source_branch> <target_branch>
 ```
 # 🔰Etiquetas (Tag's)
-Tal como se utilizaba en SVN, en Git tambien se usa el concepto de etiquetas para cada nueva versión publicada de un software
-Para crear una nueva etiqueta llamada ***1.0.1***, ejecutá:
+Tal como se utilizaba en SVN, en Git tambien se usa el concepto de etiquetas para cada nueva versión publicada de un software.  
+Para crear una nueva etiqueta llamada ***1.0.1***, ejecutá:  
 ```bash
 git tag 1.0.0 1b2e1d63ff
 ```
-Como podrás observar, usamos ***1b2e1d63ff***, este *"código"* se refiere a los ***10 caracteres*** del **commit id** al cual queres referirte con tu etiqueta.
-Para obtener los **commit id** podes ejecutar:
+Como podrás observar, usamos ***1b2e1d63ff***, este *"código"* se refiere a los ***10 caracteres*** del **commit id** al cual queres referirte con tu etiqueta.  
+Para obtener los **commit id** podes ejecutar:  
 ```bash
 git log
 ```
-también podes usar menos caracteres que el commit id, pero debe ser un valor único.
+también podes usar menos caracteres que el commit id, pero debe ser un valor único.  
 
 
 # 📝Reemplaza cambios locales
-En caso de que hagas algo mal se pueden reemplazar los cambios locales utilizando:
+En caso de que hagas algo mal se pueden reemplazar los cambios locales utilizando:  
 ```bash
 git checkout -- <filename>
 ```
-Este comando reemplaza los cambios en tu directorio de trabajo con el último contenido de **HEAD**.
- Los cambios que ya han sido agregados al **Index**, así como también los nuevos archivos, se mantendrán sin cambio.
-Por otro lado, si queres deshacer todos los cambios locales y commits, podes traer la última versión del servidor y apuntar a tu copia local principal de esta forma:
+Este comando reemplaza los cambios en tu directorio de trabajo con el último contenido de **HEAD**.  
+ Los cambios que ya han sido agregados al **Index**, así como también los nuevos archivos, se mantendrán sin cambio.  
+Por otro lado, si queres deshacer todos los cambios locales y commits, podes traer la última versión del servidor y apuntar a tu copia local principal de esta forma:  
 ```bash
 git fetch origin
 git reset --hard origin/master
