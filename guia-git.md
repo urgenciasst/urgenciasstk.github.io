@@ -43,7 +43,8 @@ git clone https://github.com/urgenciasstk/urgenciasstk.github.io.git
  Apunta al último commit realizado.  
  Esto es lo que Git utiliza cuando se hace un "add" y un "commit".  
 En el siguiente gráfico se puede comprender mejor:  
-![Commit process](https://i.imgur.com/BPqmK3W.png)
+![Commit process](https://i.imgur.com/BPqmK3W.png)  
+
 # ✔️Add & Commit
 ### Registrar cambios (añadirlos al Index)
 Este es el primer paso en el flujo de trabajo básico.  
