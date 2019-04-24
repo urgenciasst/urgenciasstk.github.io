@@ -161,3 +161,6 @@ git config format.pretty oneline
 ```bash
 git add -i
 ```
+  
+> Esta guía esta escrita bajo el lenguaje Markdown, para más información sobre como es su sintaxis podes visitar:  
+[https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
