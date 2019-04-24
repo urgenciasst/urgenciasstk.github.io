@@ -1,5 +1,6 @@
 ---
 title: ⚡ Guia de Git
+description: Una guia sobre el uso básico de Git
 ---
 ![GuiaGit](https://i.imgur.com/1p7VvhH.png)  
 
