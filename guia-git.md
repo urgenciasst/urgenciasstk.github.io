@@ -1,6 +1,7 @@
 ---
 title: ⚡ Guia de Git
 ---
+![GuiaGit](https://i.imgur.com/1p7VvhH.png)  
 
 # ⚡️Instalación
 Para comenzar a utilizar la consola batch y los comandos de git se debe instalar **git**:  
