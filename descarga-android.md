@@ -11,4 +11,4 @@ En esta ocasión tenemos el agrado de ofrecerle la última versión estable de n
 # ⚡️Descarga Android
 
 Para descargar e instalar puede seguir el siguiente enlace.   
-[Descargar UrgenciasMobile v13.0.0](https://urgenciasstk.github.io/mobile/apk/13.0.0/prod/osdeUrgenciasMobile.apk)   
+[UrgenciasMobile v13.0.0](https://urgenciasstk.github.io/mobile/apk/13.0.0/prod/osdeUrgenciasMobile.apk)   

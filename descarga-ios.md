@@ -11,4 +11,4 @@ En esta ocasión tenemos el agrado de ofrecerle la última versión estable de n
 # ⚡️Descarga iOS
 
 Para descargar e instalar puede seguir el siguiente enlace.   
-[Descargar UrgenciasMobile v13.0.0](itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/13.0.0/prod/manifest.plist)   
+[UrgenciasMobile v13.0.0](itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/13.0.0/prod/manifest.plist)   
