@@ -5,10 +5,10 @@ title: ⚡ Descarga iOS
 
 # 🚀Centro de descarga de UrgenciasMobile
 Bienvenido al centro de descarga alternativo de la aplicación ***Urgencias Mobile.***   
-En esta ocasión tenemos el agrado de ofrecerle la última versión estable de nuestra aplicación en su versión **13.0.0**   
+En esta ocasión tenemos el agrado de ofrecerle la versión estable de nuestra aplicación en su versión **12.0.4**   
 
 
 # ⚡️Descarga iOS
 
 Para descargar e instalar puede seguir el siguiente enlace.   
-[UrgenciasMobile v13.0.1](itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/13.0.1/prod/manifest.plist)   
+[UrgenciasMobile v12.0.4](itms-services://?action=download-manifest&url=https://urgenciasstk.github.io/mobile/ipa/12.0.4/prod/manifest.plist)   
